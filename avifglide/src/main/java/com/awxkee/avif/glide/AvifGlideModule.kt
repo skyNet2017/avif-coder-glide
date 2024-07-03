@@ -37,7 +37,7 @@ import com.bumptech.glide.module.LibraryGlideModule
 import java.io.InputStream
 import java.nio.ByteBuffer
 
-@GlideModule
+//@GlideModule
 class AvifCoderGlideModule : LibraryGlideModule() {
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
         // Add the Avif ResourceDecoders before any of the available system decoders. This ensures that

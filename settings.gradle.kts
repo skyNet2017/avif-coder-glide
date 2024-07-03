@@ -11,6 +11,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io")
+        maven ("https://nexus.hss01248.tech/repository/maven-releases/")
     }
 }
 

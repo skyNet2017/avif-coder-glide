@@ -31,31 +31,31 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
     buildFeatures {
         compose = true
         viewBinding = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
-    packaging {
+   /* packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
-    }
+    }*/
 }
 
 dependencies {
     api(project(":avifglide"))
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.core:core-ktx:1.2.0")
+    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation("com.google.android.material:material:1.2.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))
@@ -71,6 +71,8 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    kapt("com.github.bumptech.glide:compiler:4.16.0")
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    kapt("com.github.bumptech.glide:compiler:4.11.0")
+
+    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
 }
